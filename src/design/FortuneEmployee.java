@@ -14,7 +14,20 @@ public class FortuneEmployee {
 	 *
 	 **/
 	public static void main(String[] args) {
-		
+
+		EmployeeInfo f1 = new EmployeeInfo(100);
+		System.out.println(f1.employeeId);
+		EmployeeInfo f2 = new EmployeeInfo("john", 200);
+		System.out.println(f2.name +" "+f2.employeeId);
+		EmployeeInfo f3 = new EmployeeInfo();
+		f3.setCountryName("Bangladesh");
+		System.out.println(f3.getCountryName());
+		System.out.println(f3.totalChildrenAge(5));
+		System.out.println(f3.totalChildrenAge(5,10));
+		System.out.println(f3.totalChildrenAge(5,10,15));
+		System.out.println(f3.totalChildrenAge(2,3,6,8));
+
+
 
 
 	}
